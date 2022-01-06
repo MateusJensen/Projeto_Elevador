@@ -36,10 +36,9 @@ namespace ProjetoElevador.Models
         {
             Console.WriteLine("Quantas pessoas estão no elevador?");
             int pessoas = int.Parse(Console.ReadLine());
-            if(pessoas >= capacidade)
+            if (pessoas > capacidade)
             {
-                Console.WriteLine("A quantidade de pessoas excede o limite de capacidade!");
-                while(pessoas >= capacidade)
+                while (pessoas >= capacidade)
                 {
                     Console.WriteLine("A quantidade de pessoas excede o limite de capacidade!");
                     Console.WriteLine("Quantas pessoas estão no elevador?");
@@ -80,7 +79,7 @@ namespace ProjetoElevador.Models
         /*Função para subir um andar*/
         public static int subir(int andar_atual, int andares)
         {
-            if(andar_atual == andares)
+            if (andar_atual == andares)
             {
                 Console.WriteLine("Ñâo é possivel subir pois chegamos ao topo!");
                 return andar_atual;
@@ -92,7 +91,7 @@ namespace ProjetoElevador.Models
         }
 
         /*Função para descer um andar*/
-        public static int descer(int andar_atual,int terreo)
+        public static int descer(int andar_atual, int terreo)
         {
             if (andar_atual == 0)
             {
@@ -102,6 +101,30 @@ namespace ProjetoElevador.Models
             else
             {
                 return andar_atual - 1;
+            }
+
+        }
+        
+        /*Funcção para decisão da próxima ação do elevador*/
+        public static int run(int answer)
+        {
+            Console.WriteLine(
+                        "\n1 - Subir um andar\n" +
+                        "2 - Descer um andar\n" +
+                        "3 - Adicionar uma pessoa ao elevador\n" +
+                        "4 - Remover uma pessoa do elevador\n" +
+                        "5 - Parar elevador e sair\n");
+            var x = Console.ReadLine();
+            if(x == "")
+            {
+                answer = 0;
+                return answer;
+            }
+            else
+            {
+
+                answer = int.Parse(x);
+                return answer;
             }
         }
     }

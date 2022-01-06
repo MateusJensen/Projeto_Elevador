@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mateu\\Documents\\Projeto C#\\ProjetoElevador\\ProjetoElevador\\ProjetoElevador.csproj",
+      "projectUniqueName": "C:\\Users\\mateu\\Documents\\GitHub\\Projeto_Elevador\\ProjetoElevador\\ProjetoElevador.csproj",
       "projectName": "ProjetoElevador",
-      "projectPath": "C:\\Users\\mateu\\Documents\\Projeto C#\\ProjetoElevador\\ProjetoElevador\\ProjetoElevador.csproj",
+      "projectPath": "C:\\Users\\mateu\\Documents\\GitHub\\Projeto_Elevador\\ProjetoElevador\\ProjetoElevador.csproj",
       "packagesPath": "C:\\Users\\mateu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mateu\\Documents\\Projeto C#\\ProjetoElevador\\ProjetoElevador\\obj\\",
+      "outputPath": "C:\\Users\\mateu\\Documents\\GitHub\\Projeto_Elevador\\ProjetoElevador\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mateu\\AppData\\Roaming\\NuGet\\NuGet.Config",
