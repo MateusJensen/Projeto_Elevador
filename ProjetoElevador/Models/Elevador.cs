@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ProjetoElevador.Models
 {
@@ -38,7 +34,7 @@ namespace ProjetoElevador.Models
             int pessoas = int.Parse(Console.ReadLine());
             if (pessoas > capacidade)
             {
-                while (pessoas >= capacidade)
+                while (pessoas > capacidade)
                 {
                     Console.WriteLine("A quantidade de pessoas excede o limite de capacidade!");
                     Console.WriteLine("Quantas pessoas estão no elevador?");
